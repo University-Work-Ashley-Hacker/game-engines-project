@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bqnwmbdf0indu"]
+
+[ext_resource type="Script" uid="uid://dt1tu0wkqa00g" path="res://entities/player/player.gd" id="1_abrql"]
+[ext_resource type="Texture2D" uid="uid://csymv46hdn23x" path="res://misc/SteamHappy.png" id="2_sglur"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7x0ag"]
+radius = 50.0
+
+[node name="Player" type="CharacterBody2D" unique_id=49655601]
+script = ExtResource("1_abrql")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1783117531]
+shape = SubResource("CircleShape2D_7x0ag")
+
+[node name="Visuals" type="Node2D" parent="." unique_id=1356527366]
+
+[node name="Sprite2D" type="Sprite2D" parent="Visuals" unique_id=1939977169]
+scale = Vector2(0.5, 0.49999994)
+texture = ExtResource("2_sglur")
+
+[node name="Collision" type="Node2D" parent="." unique_id=1635255304]
+
+[node name="Management" type="Node" parent="." unique_id=1323382144]
